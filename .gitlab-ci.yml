@@ -156,7 +156,7 @@ stop_review_app:
     refs:
       - master
 
-production:
+.production:
   stage: production
   variables:
     INGRESS_DOMAIN: $KUBE_INGRESS_BASE_DOMAIN
