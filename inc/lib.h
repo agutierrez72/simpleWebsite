@@ -1,5 +1,8 @@
 #include <string>
 
 bool checkWinner(std::string team){
-	return false;
+	if(team == "SF")
+		return false;
+	if(team == "KC")
+		return true;
 }
