@@ -15,9 +15,7 @@ int main(int argc, char** argv){
             if(req.has_params({"team"})){
                 std::string team = req.url_params.get("team");
 
-                bool correct = checkWinner(team);
-
-                if(correct)
+                if(checkWinner(team))
                     res.sendHTML("Correct");
                 else
                     res.sendHTML("Incorrect");
